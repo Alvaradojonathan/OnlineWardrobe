@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="485315f1d61d4b4481851f88cf41d6c8" Name="Diagram1">
+        <EntityTypeShape EntityType="WardrobeModel.ItemColor" Width="1.5" PointX="2.375" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeModel.ItemType" Width="1.5" PointX="2.375" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeModel.Ocassion" Width="1.5" PointX="6.75" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeModel.Season" Width="1.5" PointX="6.75" PointY="0.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeModel.WardrobeItem" Width="1.5" PointX="4.625" PointY="0.625" IsExpanded="true" />
+        <AssociationConnector Association="WardrobeModel.FK_WardrobeItem_ItemColor" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeModel.FK_WardrobeItem_ItemType" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeModel.FK_WardrobeItem_Ocassions" ManuallyRouted="false" />
+        <AssociationConnector Association="WardrobeModel.FK_WardrobeItem_Seasons" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
