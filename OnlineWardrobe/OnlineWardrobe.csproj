@@ -166,6 +166,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ItemColorsController.cs" />
+    <Compile Include="Controllers\ItemTypesController.cs" />
+    <Compile Include="Controllers\OcassionsController.cs" />
+    <Compile Include="Controllers\SeasonsController.cs" />
     <Compile Include="Controllers\WardrobeItemsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -276,6 +280,26 @@
     <Content Include="Views\WardrobeItems\Details.cshtml" />
     <Content Include="Views\WardrobeItems\Edit.cshtml" />
     <Content Include="Views\WardrobeItems\Index.cshtml" />
+    <Content Include="Views\ItemColors\Create.cshtml" />
+    <Content Include="Views\ItemColors\Delete.cshtml" />
+    <Content Include="Views\ItemColors\Details.cshtml" />
+    <Content Include="Views\ItemColors\Edit.cshtml" />
+    <Content Include="Views\ItemColors\Index.cshtml" />
+    <Content Include="Views\ItemTypes\Create.cshtml" />
+    <Content Include="Views\ItemTypes\Delete.cshtml" />
+    <Content Include="Views\ItemTypes\Details.cshtml" />
+    <Content Include="Views\ItemTypes\Edit.cshtml" />
+    <Content Include="Views\ItemTypes\Index.cshtml" />
+    <Content Include="Views\Ocassions\Create.cshtml" />
+    <Content Include="Views\Ocassions\Delete.cshtml" />
+    <Content Include="Views\Ocassions\Details.cshtml" />
+    <Content Include="Views\Ocassions\Edit.cshtml" />
+    <Content Include="Views\Ocassions\Index.cshtml" />
+    <Content Include="Views\Seasons\Create.cshtml" />
+    <Content Include="Views\Seasons\Delete.cshtml" />
+    <Content Include="Views\Seasons\Details.cshtml" />
+    <Content Include="Views\Seasons\Edit.cshtml" />
+    <Content Include="Views\Seasons\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
