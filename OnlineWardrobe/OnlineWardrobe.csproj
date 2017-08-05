@@ -300,9 +300,14 @@
     <Content Include="Views\Seasons\Details.cshtml" />
     <Content Include="Views\Seasons\Edit.cshtml" />
     <Content Include="Views\Seasons\Index.cshtml" />
+    <Content Include="Views\WardrobeItems\Shoes.cshtml" />
+    <Content Include="Views\WardrobeItems\Tops.cshtml" />
+    <Content Include="Views\WardrobeItems\Bottoms.cshtml" />
+    <Content Include="Views\WardrobeItems\Accessories.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

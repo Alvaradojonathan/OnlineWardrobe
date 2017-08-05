@@ -1,6 +1,8 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image:url(http://www.myfreetextures.com/wp-content/uploads/2011/06/20090405-PHIL0111.jpg);
+    background-size:100%;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +24,25 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#itemImageIndex {
+    width:100px;
+    margin-left:auto;
+    margin-right:auto;
+    position:center;
+
+}
+#itemName {
+    text-align:center;
+}
+.img-thumbnail {
+    border:none;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:transparent;
+}
+
+#itemImageDetail {
+    width:300px;
+}
+

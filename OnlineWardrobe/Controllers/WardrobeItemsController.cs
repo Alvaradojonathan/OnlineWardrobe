@@ -18,6 +18,30 @@ namespace OnlineWardrobe.Controllers
         public ActionResult Index()
         {
             var wardrobeItems = db.WardrobeItems.Include(w => w.ItemColor).Include(w => w.ItemType).Include(w => w.Ocassion).Include(w => w.Season);
+            return View(wardrobeItems.ToList());      
+        }
+        // GET: WardrobeItems == Shoes
+        public ActionResult Shoes()
+        {
+            var wardrobeItems = db.WardrobeItems.Include(w => w.ItemColor).Include(w => w.ItemType).Include(w => w.Ocassion).Include(w => w.Season);
+            return View(wardrobeItems.ToList());
+        }
+        //GET: WardrobeItems == Tops
+        public ActionResult Tops()
+        {
+            var wardrobeItems = db.WardrobeItems.Include(w => w.ItemColor).Include(w => w.ItemType).Include(w => w.Ocassion).Include(w => w.Season);
+            return View(wardrobeItems.ToList());
+        }
+        //GET: WardrobeItems == Bottoms
+        public ActionResult Bottoms()
+        {
+            var wardrobeItems = db.WardrobeItems.Include(w => w.ItemColor).Include(w => w.ItemType).Include(w => w.Ocassion).Include(w => w.Season);
+            return View(wardrobeItems.ToList());
+        }
+        //GET: WardrobeItems == Accessories
+        public ActionResult Accessories()
+        {
+            var wardrobeItems = db.WardrobeItems.Include(w => w.ItemColor).Include(w => w.ItemType).Include(w => w.Ocassion).Include(w => w.Season);
             return View(wardrobeItems.ToList());
         }
 
