@@ -1,18 +1,16 @@
 ﻿@model IEnumerable<OnlineWardrobe.Models.WardrobeItem>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<div class="row">
+<h2 id="heading">
+    Accessories
+</h2>
+<div class="row container aboutT3">
     @foreach (var item in Model)
     {
         if (item.ItemType.Type == "Accessories")
         {
-
             <div class="img-thumbnail col-md-3">
+                <h5 id="itemName">@Html.DisplayFor(modelItem => item.Name)</h5>
                 <p id="imageCenter"><a href="@Url.Action("Details", new { id = item.ItemID })"><img id="itemImageIndex" class="img-responsive" src="@Html.DisplayFor(modelItem => item.Photo)" /></a></p>
-                <hr />
-                <h4 id="itemName">@Html.DisplayFor(modelItem => item.Name)</h4>
             </div>
         }
     }

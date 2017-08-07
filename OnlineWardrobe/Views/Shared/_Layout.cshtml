@@ -16,10 +16,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Closet Organizer", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a href="@Url.Action("Index","Home")" )><img style="width:80px;" src="~/Content/images/logo.png" /></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Wardrobe", "Index", "WardrobeItems")</li>
                     <li>@Html.ActionLink("Tops", "Tops", "WardrobeItems")</li>
                     <li>@Html.ActionLink("Bottoms", "Bottoms", "WardrobeItems")</li>
                     <li>@Html.ActionLink("Shoes", "Shoes", "WardrobeItems")</li>
@@ -28,30 +29,24 @@
             </div>
         </div>
     </div>
-    <div id="TopOfPage" class="container body-content">
+
+    <div class="container">
         @RenderBody()
-        <hr />
-        <footer>
-            <div class="row">
-                <a href="#TopOfPage">Back to top</a>
-            </div>
-            <div class="row panel-footer footerStyle">
-                <div class="col-md-4">
-                    <h4>Contact</h4>
-                    <h6 class="glyphicon glyphicon-phone-alt"> (555)555-1212</h6>
-                    <br />
-                    <h6 class="glyphicon glyphicon-envelope"> Support@closetorganizer.com</h6>
-                </div>
-                <div class="col-md-4">
-                    <h4>Get to Know Us</h4>
-                    <a href="/Home/About">About Us</a>
-                </div>
-                <div class="col-md-4">
-                    <h4>Contact</h4>
-                </div>
-            </div>
-        </footer>
     </div>
+    <footer>
+        <div class="backBar">
+            <span><a href="#TopOfPage">Back to top</a></span>
+        </div>
+        <div class="row aboutT">
+            <div class="container">
+                <div class="footA">
+                    <h3>Contact</h3>
+                    <h4 class="glyphicon glyphicon-phone-alt"> (555)555-1212</h4><br /><h4 class="glyphicon glyphicon-envelope">Support@closetorganizer.com</h4>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

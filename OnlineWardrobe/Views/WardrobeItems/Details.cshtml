@@ -4,16 +4,20 @@
     ViewBag.Title = "Details";
 }
 
-<h2>@Html.DisplayFor(model => model.ItemType.Type)</h2>
+<h2 id="heading">@Html.DisplayFor(model => model.ItemType.Type)</h2>
 
-<div class="row">
+<div class="row aboutT3">
     <hr />
     <div class="col-md-4 col-md-offset-2">
-        <p><img id="itemImageDetail" src="@Html.DisplayFor(model => model.Photo)" /></p>
+        <p><img class="img-responsive img-rounded"id="itemImageDetail" src="@Html.DisplayFor(model => model.Photo)" /></p>
     </div>
     <div class="col-md-4 thunmbnail">
         <h4>@Html.DisplayFor(model => model.Name)</h4>
         <p class="glyphicon glyphicon-stop" style="color:@Html.DisplayFor(model => model.ItemColor.Color)"></p> @Html.DisplayFor(model => model.ItemColor.Color)
+        <h4>Details:</h4>
+        <p>Lorem ipsum dolor sit amet, mazim utroque cu mei. Eum no quod purto congue, aeterno nusquam atomorum id ius. Ex nec inani honestatis cotidieque, at est nonumes dissentiunt. Ea tota vocibus ocurreret nec, cetero iisque interesset quo te. Vel putant audiam pertinax at.
+
+Melius eligendi conclusionemque ius in. Cu fugit singulis deserunt mei, mei elitr albucius eleifend ad, ius possim neglegentur ne. Et sea malis dissentiunt, te sadipscing consectetuer his. Civibus definitionem te sit, stet evertitur te pri. Usu no alii dolorem, vel cu posse conceptam. At mea justo decore ancillae.</p>
     </div>
             
             

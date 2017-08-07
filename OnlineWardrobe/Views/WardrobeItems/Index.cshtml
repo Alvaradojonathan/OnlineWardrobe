@@ -1,67 +1,23 @@
 ﻿@model IEnumerable<OnlineWardrobe.Models.WardrobeItem>
 
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<h2 id="heading">
+    Wardrobe
+</h2>
 
 
-<table class="table">
-    <tr>
-        
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ItemColor.Color)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ItemType.Type)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Ocassion.Ocassion1)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Season.Season1)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model)
-{
-        <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            <img id="itemImageIndex" class="img-responsive" src="@Html.DisplayFor(modelItem => item.Photo)" />
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ItemColor.Color)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ItemType.Type)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Ocassion.Ocassion1)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Season.Season1)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.ItemID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.ItemID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.ItemID })
-        </td>
-    </tr>
-}
-
-</table>
+    @foreach (var item in Model)
+    {
+        <div class="row container aboutT3">
+            <div class="img-thumbnail col-md-4">
+                <h4 id="itemName">@Html.DisplayFor(modelItem => item.Name)</h4>
+                <p><a href="@Url.Action("Details", new { id = item.ItemID })"><img id="itemImageIndex" class="img-responsive" src="@Html.DisplayFor(modelItem => item.Photo)" /></a></p>
+            </div>
+            <div class="col-md-2 indexColor">
+                <p class="glyphicon glyphicon-stop" style="color:@Html.DisplayFor(modelItem => item.ItemColor.Color)"></p> @Html.DisplayFor(modelItem => item.ItemColor.Color)
+            </div>
+            <div class="col-md-6">
+                <h5>Description:</h5>
+                <p>Lorem ipsum dolor sit amet, mazim utroque cu mei. Eum no quod purto congue, aeterno nusquam atomorum id ius. Ex nec inani honestatis cotidieque, at est nonumes dissentiunt...<a href="@Url.Action("Details", new { id = item.ItemID })"> more&raquo;</a></p>
+            </div>
+        </div>
+    }
